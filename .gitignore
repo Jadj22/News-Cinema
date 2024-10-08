@@ -26,33 +26,5 @@ yarn-error.log*
 
 #
 
-Jeton d'accès en lecture à l'API:
-eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMDhlOTY4OGMxMDc5YmRmOWIzZDU5YTI1YjE3YWE1NCIsIm5iZiI6MTcyNzkwMjU2Mi41NDM4MzEsInN1YiI6IjY2ZmRhZGU2Zjg3OGFkZmVkMDg0Yjc5ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Cl4TCJ2xSHa29ZVbObDSNH8QAehMMBRG9blezREpyAk
-
-Clé de l'API:
-108e9688c1079bdf9b3d59a25b17aa54
-
-Base URL : http://api.themoviedb.org/3
-
-individual :
-https://api.themoviedb.org/3/movie/{movie_id}?language=fr
-
-search :
-https://api.themoviedb.org/3/search/movie?api_key=108e9688c1079bdf9b3d59a25b17aa54&query={movie_name}
-
-now Playing :
-https://api.themoviedb.org/3/movie/now_playing?api_key=108e9688c1079bdf9b3d59a25b17aa54
-
-popular :
-https://api.themoviedb.org/3/movie/popular?api_key=108e9688c1079bdf9b3d59a25b17aa54
-
-Top Rated :
-https://api.themoviedb.org/3/movie/top_rated?api_key=108e9688c1079bdf9b3d59a25b17aa54
-
-Upcoming :
-https://api.themoviedb.org/3/movie/upcoming?api_key=108e9688c1079bdf9b3d59a25b17aa54
-
-
-https://api.themoviedb.org/3/search/movie?api_key=108e9688c1079bdf9b3d59a25b17aa54&query=Inception
 
 
