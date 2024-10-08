@@ -46,21 +46,21 @@ const MovieList = ({ apiPath, title }) => {
     );
   } else {
     contenu = (
-      /* Section contenant la liste des films avec des classes Tailwind pour le style */
-      <section className="max-w-7xl mx-auto py-7">
-        {/* Conteneur flex pour centrer les cartes des films et les disposer en colonnes */}
-        <div className="flex justify-start flex-wrap mobile:justify-evenly">
-          {/* Vérification si movies est un tableau et contient des éléments */}
-          {Array.isArray(movies) && movies.length > 0 ? (
-            movies.map((movie) => (
-              // Utilisation de la clé unique 'id' pour chaque carte de film
-              <Card key={movie.id} movie={movie} />
-            ))
-          ) : (
-            <p className="text-center w-full text-gray-500">Aucun film trouvé.</p>
-          )}
-        </div>
-      </section>
+    <section className="max-w-7xl mx-auto py-7">
+      {/* Conteneur flex pour centrer les cartes des films et les disposer en colonnes */}
+      <div className=" grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-4">
+        {/* Vérification si movies est un tableau et contient des éléments */}
+        {Array.isArray(movies) && movies.length > 0 ? (
+          movies.map((movie) => (
+            // Utilisation de la clé unique 'id' pour chaque carte de film
+            <Card key={movie.id} movie={movie} />
+          ))
+        ) : (
+          <p className="text-center w-full text-gray-500">Aucun film trouvé.</p>
+        )}
+      </div>
+    </section>
+
     );
   }
 

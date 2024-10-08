@@ -1,6 +1,6 @@
-import React, { useEffect, useState} from 'react';
-import Logo from "../assets/logo192.png";  // Importation du logo
-import { Link, NavLink, useNavigate } from 'react-router-dom';  // Importation des composants de navigation
+import React, { useEffect, useState } from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom'; // Importation des composants de navigation
+import Logo from "../assets/logo192.png"; // Importation du logo
 
 const Header = () => {
   const [hidden, setHidden] = useState(true);

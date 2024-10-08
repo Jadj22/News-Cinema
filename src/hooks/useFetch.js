@@ -2,19 +2,20 @@
 import { useEffect, useState } from 'react';
 
 // Ajout d'un paramètre initialData avec une valeur par défaut de null
-const useFetch = (apiPath, queryParams = {}, initialData = null) => {
-  const [data, setData] = useState(initialData); // Utilisation de initialData
+const useFetch = (apiPath, queryTerm="") => {
+  const [data, setData] = useState([]); // Utilisation de initialData
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   // Construction dynamique des paramètres de requête
-  const queryString = new URLSearchParams({
-    api_key: process.env.REACT_APP_API_KEY,
-    language: 'fr-FR', // Assure que les données sont en français
-    ...queryParams
-  }).toString();
+  // const queryString = new URLSearchParams({
+  //   api_key: process.env.REACT_APP_API_KEY,
+  //   language: 'fr-FR', // Assure que les données sont en français
+  //   ...queryParams
+  // }).toString();
 
-  const url = `https://api.themoviedb.org/3/${apiPath}?${queryString}`;
+  const url = `https://api.themoviedb.org/3/${apiPath}?api_key=${process.env.REACT_APP_API_KEY}&query=${queryTerm}&include_adult=false&language=fr`;
+
 
   useEffect(() => {
     const fetchData = async () => {
