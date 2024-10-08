@@ -13,6 +13,7 @@
 
 # misc
 .DS_Store
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -24,56 +25,6 @@ yarn-error.log*
 
 
 #
-Couleurs du site
-Si tu utilises la couleur #FFD700 (doré) comme couleur principale pour un site, il est important de choisir des couleurs complémentaires ou contrastées qui s'accordent bien avec le doré. Voici quelques suggestions de palettes à utiliser :
-
-Mode clair :
-Couleur de fond :
-
-Blanc pur : #FFFFFF
-Gris très clair : #F5F5F5
-Ces teintes apportent une apparence lumineuse et nette.
-Texte principal :
-
-Noir : #000000
-Gris foncé : #333333
-Ces couleurs offrent un bon contraste avec le fond clair.
-Texte secondaire :
-
-Gris moyen : #666666
-Pour les sous-titres et le texte de moindre importance.
-Couleur d'accent (doré) :
-
-#FFD700 (doré)
-Utilisée pour les boutons, liens, et autres éléments interactifs.
-Bordures et ombrages :
-
-Gris clair : #DDDDDD ou #E0E0E0
-Pour les séparateurs ou les ombres légères.
-Mode sombre :
-Couleur de fond :
-
-Noir : #000000
-Gris très foncé : #1E1E1E
-Ces couleurs réduisent la fatigue visuelle dans des environnements sombres.
-Texte principal :
-
-Blanc cassé : #E0E0E0
-Blanc pur : #FFFFFF
-Pour une bonne lisibilité avec un contraste fort.
-Texte secondaire :
-
-Gris clair : #B0B0B0
-Pour les sous-titres ou le texte moins important.
-Couleur d'accent (doré) :
-
-#FFD700 (doré)
-Pour les éléments interactifs comme les boutons et les liens.
-Bordures et ombrages :
-
-Gris foncé : #444444
-Pour des séparateurs subtils ou des bordures discrètes.
-
 
 Jeton d'accès en lecture à l'API:
 eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMDhlOTY4OGMxMDc5YmRmOWIzZDU5YTI1YjE3YWE1NCIsIm5iZiI6MTcyNzkwMjU2Mi41NDM4MzEsInN1YiI6IjY2ZmRhZGU2Zjg3OGFkZmVkMDg0Yjc5ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Cl4TCJ2xSHa29ZVbObDSNH8QAehMMBRG9blezREpyAk
@@ -84,7 +35,7 @@ Clé de l'API:
 Base URL : http://api.themoviedb.org/3
 
 individual :
-https://api.themoviedb.org/3/movie/{movie_id}?language=en-US
+https://api.themoviedb.org/3/movie/{movie_id}?language=fr
 
 search :
 https://api.themoviedb.org/3/search/movie?api_key=108e9688c1079bdf9b3d59a25b17aa54&query={movie_name}
