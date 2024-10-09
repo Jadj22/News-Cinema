@@ -33,9 +33,9 @@ const Footer = () => {
               <span className="hidden sm:block ms-2">Instagram</span>
             </a>
           </li>
-          <li className="flex items-center">
+          <li className="flex items-center me-4 md:me-6">
             <a 
-              href="https://wa.me/+22870565073" // Remplacez par votre numéro de téléphone WhatsApp
+              href="https://wa.me/+22870565073" 
               className="hover:underline flex items-center" 
               target="_blank" 
               rel="noopener noreferrer"
